@@ -1,0 +1,36 @@
+.card-icon {
+  position: relative;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.span {
+  position: absolute;
+  top: -15px;
+  right: -2px;
+  width: 25px;
+  height: 28px;
+  padding: 3px 5px;
+  background-color: #f8d7a4;
+  border-radius: 4px;
+  color: black;
+}
+
+@media (max-width: 800px) {
+  .span {
+    position: absolute;
+    top: -15px;
+    right: -2px;
+    background-color: #12273d;
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    color: #fafafa;
+    padding: 4px 8px;
+  }
+
+  .span-clicked {
+    background-color: #741906;
+  }
+}

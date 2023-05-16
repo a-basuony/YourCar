@@ -1,0 +1,139 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 50px;
+  margin-top: 100px;
+}
+
+.about-content h2 {
+  position: absolute;
+  left: 98px;
+  top: 1192px;
+  height: 72px;
+  width: 159px;
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 72px;
+  color: #741906;
+  margin-bottom: 40px;
+}
+
+.about-content h2::before {
+  content: "ABOUT US";
+  position: absolute;
+  left: -15px;
+  top: -105px;
+  width: 698px;
+  height: 165px;
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 128px;
+  line-height: 164px;
+  color: #ebebeb;
+  z-index: -1;
+}
+
+.about-content p {
+  position: absolute;
+  max-width: 639px;
+  height: 487px;
+  left: 96px;
+  top: 1305px;
+
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 24px;
+  letter-spacing: 0.05em;
+  color: #232730;
+}
+
+.about-image {
+  position: absolute;
+  width: 453.59px;
+  height: 616.19px;
+  left: 815px;
+  top: 1170.63px;
+  background-image: url(../../assets/carImage.svg);
+  margin-left: auto;
+}
+
+.about-image img {
+  max-width: 100%;
+  position: absolute;
+  /* right: 82.7px; */
+  left: 69px;
+  width: 465.97px;
+  height: 785.22px;
+}
+
+@media (max-width: 1000px) {
+  .about-content h2 {
+    font-size: 64px;
+    text-align: center;
+    line-height: 72px;
+    left: 352px;
+  }
+  .about-content h2::before {
+    left: -270px;
+  }
+
+  .about-content p {
+    text-align: center;
+  }
+
+  .about-image {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .about {
+    margin-top: 50px;
+  }
+
+  .about-content {
+    text-align: center;
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  .about-content h2 {
+    left: 200px;
+    width: fit-content;
+    font-family: "Lora";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 41px;
+    margin-top: 10px;
+  }
+  .about-content h2::before {
+    width: 360px;
+    height: 85px;
+    left: -150px;
+    top: -35px;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 82px;
+  }
+
+  .about-content p {
+    font-family: "Nunito Sans";
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+    margin-left: -20px;
+    width: 331px;
+    height: 487px;
+  }
+  .about-image {
+    display: none;
+  }
+}
